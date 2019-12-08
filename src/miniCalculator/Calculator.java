@@ -34,9 +34,9 @@ public class Calculator {
 				throw new IllegalArgumentException("Unexpected value: " + choice);
 			}
 			System.out.println("Do you want to continue ? y/n");
-		 af = sc.next().toUpperCase();
-		} while (af.equalsIgnoreCase("Y"));
-		
+			af = sc.next().toUpperCase();
+		} while (af.equalsIgnoreCase("Y"));// it is similar to equals() but it ignores case.
+
 	}
 
 	private static void divide(int a, int b) {
